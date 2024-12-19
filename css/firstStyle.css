@@ -1,0 +1,125 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+
+
+@media screen and (max-width: 576px) {
+    .main-title {
+        font-size: 20px;
+    }
+}
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    user-select: none;
+}
+
+
+/* /////////////////////////////// 메인 인텍스 코드 /////////////////////////////// */
+/* 링크 데코 없애기 */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* 홈페이지 값 */
+html{
+    font-size: 10px;
+}
+.no-drag{
+    user-select: none;
+}
+
+
+/*몸통 설정*/
+
+body {
+   background-color: black;
+   margin: 0;
+   padding: 0;
+}
+
+.video-container{
+   position: relative;
+   width: 100%;
+   padding-bottom: 56.25%;
+   overflow: hidden;
+}
+
+.video-container video {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   border: 0;
+}
+
+/*///////////////개별설정////////////////*/
+/* 시작 화면 */
+
+
+
+
+/* 공통 구조 */
+.text-kr-normal{font-family: "Noto Sans KR", sans-serif;}
+.text-en-normal{font-family: "Newsreader", sans-serif;}
+
+.text-white{color: white;}
+.text-black{color: rgb(0, 0, 0);}
+.text-gray{color: rgb(44, 49, 69);}
+.text-red{color: rgb(255, 0, 0);}
+.text-orange{color: #F15928;}
+
+.text-center{text-align: center;}
+.text-left{text-align: left;}
+.text-right{text-align: right;}
+
+
+.footerFixed {
+    position: relative;
+    bottom: 25px;
+    font-size: 1rem;
+}
+
+
+/* 이미지 효과*/
+.imageEffectHardlight {
+    mix-blend-mode: hard-light;
+    filter: contrast(1.5);
+}
+
+.imageEffectScreen {
+    mix-blend-mode: screen;
+    filter: contrast(1.5);
+}
+
+
+/* 푸터 */
+footer{
+    height: 100px;
+    margin: 50px;
+    justify-content: space-between;
+
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

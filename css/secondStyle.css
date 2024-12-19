@@ -1,0 +1,388 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+*{
+    margin: 0px;
+    padding: 0px;
+    user-select: none;
+}
+
+
+/* /////////////////////////////// 메인 인텍스 코드 /////////////////////////////// */
+/* 링크 데코 없애기 */
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+/* 홈페이지 값 */
+html{
+    font-family: 'Pretendard', sans-serif;
+    font-size: 10px;
+    min-width: 500px;
+}
+.no-drag{
+    user-select: none;
+}
+
+
+body{
+    margin:  auto;
+    background-color: #000000;
+    min-width: 500px;
+}
+
+.area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bigBgImgWhere {
+    background-image: url(../img/WangGaWui5.jpg);
+    background-size: cover, cover;
+    background-position: center,center;
+    filter: blur(1vw) brightness(0.8);
+
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+.bigBgImgWhere2 {
+    background-image: url(../img/oldBoyBg.jpg);
+    background-size: cover, cover;
+    background-position: center,center;
+    filter: blur(1vw) brightness(0.8);
+
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+
+/*몸통 설정*/
+
+.firstbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* 배경 */
+.bgImgBox {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.bgImgBox .bgImgSize {
+    position: absolute;
+    transition: transform 0.2s ease;
+    width: 30vw;
+    height: auto;
+}
+
+.bgImgBox .bgImgSize img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+/* 내용물 */
+#darkOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 900;
+}
+
+
+/* 오버레이 구분 */
+#overlayImage {
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    display: none;
+    position: absolute; left:0; top: 80vh; width:33vw; z-index: 1000;
+}
+
+#overlayImage2 {
+    transition: transform 0.3s ease-in-out;
+    display: none;
+    position: absolute; left:33vw; top: 80vh; width:33vw; z-index: 1000;
+}
+
+#overlayImage3 {
+    transition: transform 0.3s ease-in-out;
+    display: none;
+    position: absolute; left:66vw; top: 80vh; width:33vw; z-index: 1000;
+}
+
+/* 내부콘텐츠 시작*/
+.boxContentSize {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transform: rotate(-5deg);
+    transition: transform 0.3s ease-in-out;
+    z-index: 999;
+}
+
+
+.colorBox {
+    position: relative;
+    width: 55vw;
+    height: 28vw;
+    background-color: #00A98D;
+    border-radius: 20px;
+    margin-top: 3.8vw;
+    cursor: pointer;
+    box-shadow: 0 0.4vw 2vw rgba(4, 88, 56, 0.7);
+}
+
+.colorBoxContent {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+.boxContentSize:hover {
+    transform: rotate(0deg);
+}
+
+
+/* 내부 글씨 */
+.txtArea {
+    position: relative;
+    color: #ffffff;
+    width: 100%;
+    height: auto;
+    padding-top: 3.4vw;
+    padding-left: 3.4vw;
+    padding-right: 3.4vw;
+    box-sizing: border-box;
+}
+
+.txtArea .movieInFoodTittle {
+    font-size: 2.5vw; 
+    font-weight: 700;
+    margin-top: 6vw;
+    margin-bottom: 1vw;
+}
+
+.txtArea .movieInFoodContent {
+    font-size: 1.35vw; line-height: 1.4;
+    font-weight: 600;
+}
+
+.arrow {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 3vw;
+    height: 3vw;
+    margin-bottom: 0.4vw;
+    
+}
+
+.arrowSize {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.arrow .arrowSize img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transform: rotate(90deg);
+}
+
+/*사진 박스*/
+
+.wangBox {
+    position: absolute;
+    width: 55vw;
+    height: 28vw;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    margin-bottom: 3.8vw;
+    overflow: hidden;
+}
+
+.wangBoxSize {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.movieImgSize {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.movieImgSize img {
+    object-fit: cover;
+    width: auto;
+    height: 100%;
+    border-radius: 20px;
+    transform: scale(1.3);
+    filter: brightness(1.4);
+}
+
+.gradientOverlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(0, 0, 0, 2), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    border-radius: 20px;
+}
+
+.linkImg {
+    position: absolute;
+    top: 1.5vw; 
+    right: 1.5vw;
+    z-index: 1;
+}
+
+.linkImgSize {
+    width: 2.2vw;
+    height: 2.2vw;
+}
+
+.linkImgSize img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.wangTxtBox {
+    position: absolute;
+    top: 6.5vw;
+    right: 3vw;
+    width: 24vw;
+    height: 16vw;
+}
+
+.movieTittleBox {
+    display: flex;
+    align-items: flex-end;
+    color: white;
+}
+
+.movieName{
+    font-size: 2.4vw; font-weight: 700; margin-right: 0.2vw;
+}
+
+.movieName2{
+    font-size: 1.8vw;   font-weight: 700;
+}
+
+.movieinfo {
+    margin-top: 0.4vw;
+    color: #a8a8a8;
+    font-size: 1.1vw;
+    font-weight: 500;
+}
+
+.movieTag {
+    margin-top: 1.2vw;
+    color: #000000;
+    font-size: 1vw;
+    font-weight: 700;
+}
+
+.tag {
+    display: flex;
+    align-items: center;
+}
+
+.tagName {
+    width: auto;
+    height: auto;
+    padding-left: 0.6vw; padding-right: 0.6vw;
+    padding-top: 0.2vw; padding-bottom: 0.2vw;
+    background-color: #cbcdcf;
+    border-radius: 10vw;
+    margin-right: 0.4vw;
+}
+
+.movieContent {
+    margin-top: 1.2vw;
+    color: #cbcdcf;
+    font-size: 1.1vw; line-height: 1.4;
+    font-weight:500;
+}
+
+/*///////////////개별설정////////////////*/
+/* 공통 구조 */
+
+.text-white{color: white;}
+.text-black{color: rgb(0, 0, 0);}
+.text-gray{color: rgb(44, 49, 69);}
+.text-red{color: rgb(255, 0, 0);}
+.text-orange{color: #F15928;}
+
+
+.text-center{text-align: center;}
+.text-left{text-align: left;}
+.text-right{text-align: right;}
+
+
+/* 이미지 효과*/
+.imageEffectHardlight {
+    mix-blend-mode: hard-light;
+    filter: contrast(0.5);
+}
+
+.imageEffectScreen {
+    mix-blend-mode: screen;
+    filter: contrast(4);
+}
+
+.imageEffectBrightness{
+    filter: brightness(80%);
+}
+
+
+/* 푸터 */
+footer{
+    position: relative;
+    bottom: 1vw;
+
+    height: 2vw;
+    margin: 10vw;
+    justify-content: center;
+
+    font-weight: 500;
+    font-size: 0.8vw;
+}
+
+
