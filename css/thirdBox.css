@@ -1,5 +1,5 @@
-.bigBgImgWhere2 {
-    background-image: url(../img/oldBoyBg.jpg);
+.bigBgImgWhere3 {
+    background-image: url(../img/parasiteBg.jpg);
     background-size: cover, cover;
     background-position: center,center;
     filter: blur(1vw) brightness(0.8);
@@ -12,7 +12,7 @@
 
 /*몸통 설정*/
 
-.secondBox {
+.thirdBox {
     position: relative;
     display: flex;
     justify-content: center;
@@ -29,59 +29,60 @@
 /* 내용물 */
 
 /* 오버레이 구분 */
-#overlayImage6 {
+#overlayImage8 {
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
     display: none;
-    position: absolute; right:0; top: 20vh; width:35vw; z-index: 1000;
+    position: absolute; right:-10vw; top: 10vh; width:35vw; z-index: 1000;
 }
 
-#overlayImage7 {
+#overlayImage9 {
+    overflow: hidden;
     transition: transform 0.3s ease-in-out;
     display: none;
-    position: absolute; left:0; top: 40vh; width:33vw; z-index: 1000;
-    transform: scaleX(-1) !important;
+    position: absolute; left:0; top: 0vh; width:20vw; z-index: 1000;
+}
+
+#overlayImage10 {
+    transition: transform 0.3s ease-in-out;
+    display: none;
+    position: absolute; right:10vw; top: 90vh; width:20vw; z-index: 1000;
+}
+
+#overlayImage11 {
+    transition: transform 0.3s ease-in-out;
+    display: none;
+    position: absolute; left:13vw; top: 89vh; width:25vw; z-index: 1000;
 }
 
 /* 내부콘텐츠 시작*/
-.boxContentSize2 {
+.boxContentSize3 {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    transform: rotate(12deg);
+    transform: rotate(4deg);
     transition: transform 0.3s ease-in-out;
     z-index: 999;
 }
 
-.bigBgImgWhere2 {
-    background-image: url(../img/oldBoyBg.jpg);
-    background-size: cover, cover;
-    background-position: center,center;
-    filter: blur(1vw) brightness(0.8);
-
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-}
-
-.colorBox2 {
+.colorBox3 {
     position: relative;
     width: 55vw;
     height: 28vw;
-    background-color: #681405;
+    background-color: #148a53;
     border-radius: 20px;
     margin-top: 3.8vw;
     cursor: pointer;
-    box-shadow: 0 0.4vw 2vw rgba(88, 14, 4, 0.7);
+    box-shadow: 0 0.4vw 2vw #179459B3;
 }
 
-.boxContentSize2:hover {
+.boxContentSize3:hover {
     transform: rotate(0deg);
 }
 
-.wangBox2 {
+.wangBox3 {
     position: absolute;
     width: 55vw;
     height: 28vw;
@@ -91,7 +92,7 @@
     overflow: hidden;
 }
 
-.wangTxtBox2 {
+.wangTxtBox3 {
     position: absolute;
     top: 6.5vw;
     right: 3vw;

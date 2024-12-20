@@ -1,21 +1,18 @@
 @media (max-width: 915px) {
-    .colorBox {
+
+    .headerLine {    
+        font-size: 6vw;
+    }
+
+    .colorBox, .colorBox2, .colorBox3, .colorBox4, .colorBox5 {
         width: 90vw;
         height: 60vh;
         margin-top: 5vh;
     }
 
-    .colorBox2 {
-        width: 90vw;
-        height: 60vh;
-        margin-top: 5vh;
-    }
 
-    .boxContentSize {
-        transform: rotate(0deg);
-    }
-
-    .boxContentSize2 {
+    .boxContentSize, .boxContentSize2, .boxContentSize3,
+    .boxContentSize4, .boxContentSize5 {
         transform: rotate(0deg);
     }
 
@@ -41,36 +38,16 @@
         background: linear-gradient(to top, rgba(0, 0, 0, 2), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
         
     }
-
-    .wangBox2 {
+    .wangBox, .wangBox2, .wangBox3,
+    .wangBox4, .wangBox5 {
         width: 90vw;
         height: 60vh;
         margin-bottom: 5vh;
         overflow: hidden;
     }
 
-    .wangBox {
-        width: 90vw;
-        height: 60vh;
-        margin-bottom: 5vh;
-        overflow: hidden;
-    }
-
-    .wangTxtBox {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-
-        top: 24vh;
-        right: auto;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 80vw;
-        height: auto;
-    }
-
-    .wangTxtBox2 {
+    .wangTxtBox, .wangTxtBox2, .wangTxtBox3,
+    .wangTxtBox4, .wangTxtBox5 {
         position: absolute;
         display: flex;
         justify-content: center;
@@ -85,24 +62,24 @@
     }
 
     .movieName{
-        font-size: 3.8vh; font-weight: 700; margin-right: 0.2vw;
+        font-size: 3vh; font-weight: 700; margin-right: 0.2vw;
     }
     
     .movieName2{
-        font-size: 2.8vh;   font-weight: 600;
+        font-size: 2vh;   font-weight: 600;
     }
     
     .movieinfo {
         margin-top: 0.4vh;
         color: #a8a8a8;
-        font-size: 2.2vh;
+        font-size: 1.8vh;
         font-weight: 500;
     }
     
     .movieTag {
         margin-top: 2vh;
         color: #000000;
-        font-size: 1.6vh;
+        font-size: 1.4vh;
         font-weight: 700;
     }
 
@@ -129,9 +106,9 @@
         align-items: center;
         justify-content: center;
     
-        width: 5vh;
-        height: 5vh;
-        margin-bottom: 0.05vh;
+        width: 3.5vh;
+        height: 3.5vh;
+        margin-bottom: 0.8vh;
         
     }
 
@@ -165,12 +142,11 @@
         font-size: 3vh; 
         font-weight: 700;
         margin-top: 6vh;
-        margin-bottom: 0.11vh;
     }
     
     .txtArea .movieInFoodContent {
-        font-size: 1.6vh; line-height: 1.4;
+        font-size: 1.45vh; line-height: 1.5;
         font-weight: 600;
-        margin-bottom: 0.1vh;
+        margin-bottom: 0vh;
     }    
 }
